@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>readmore-userscript-server</title>
+    <style type="text/css">
+        body{
+            font-family: monospace;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+<h1>Readmore-Userscript Server</h1>
+
+    <ul>
+        <li><h3>Optionen synchronisieren</h3></li>
+        <li><b>GET&nbsp;&nbsp;:: /api/options/:id/:hash</b><br />Liefert die gespeicherten Optionen als JSON String zurück. Falls etwas schiefgelaufen ist, wird ein entsprechendes Error-Object zurückgegeben.</li>
+        <li><b>POST&nbsp;:: /api/options/:id/:hash</b><br />Erstellt einen neuen Eintrag für den User in der Datenbank und speichert die mitgeschickten Optionen. Falls bereits ein Eintrag vorhanden ist, wird ein entsprechendes Error-Object zurückgegeben.</li>
+        <li><b>PUT&nbsp;&nbsp;:: /api/options/:id/:hash</b><br />Aktualisiert einen bereits existierenden Eintrag für den User. Falls etwas schiefgelaufen ist, wird ein entsprechendes Error-Object zurückgegeben.</li>
+    </ul>
+</body>
+</html>
