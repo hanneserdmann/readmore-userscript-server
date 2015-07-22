@@ -1,0 +1,31 @@
+{
+  "app": {
+    "host": "127.0.0.1",
+    "port": 62854,
+    "name": "Readmore Userscript Server"
+  },
+
+  "database": {
+    "path": "database/",
+    "name": "userscript.db",
+    "table": {
+      "user":    "user",
+      "login":   "user_login",
+      "option":  "user_option",
+      "session": "session",
+      "version": "version"
+    }
+  },
+
+  "password": {
+    "minLength": 3,
+    "maxLength": 32
+  },
+
+  "session": {
+    "secret": "Oppoops, sorry!",
+    "name":   "readmoreUserscriptServer",
+    "resave":            false,
+    "saveUninitialized": false
+  }
+}

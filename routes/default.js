@@ -1,9 +1,7 @@
-module.exports = function (app, path){
-    app.get('/', function(req, res){
-        res.redirect('/api');
-    });
+'use strict'
 
-    app.get('/api', function (req, res) {
+module.exports = function (app, path) {
+    app.get('/', function (req, res) {
         res.sendFile(path.join(__dirname, '../', 'api.html'));
     });
 };
