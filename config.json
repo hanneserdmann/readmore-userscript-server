@@ -6,7 +6,7 @@
   },
 
   "database": {
-    "path": "database/",
+    "path": "/home/thextor/html/userscript/api/database/",
     "name": "userscript.db",
     "table": {
       "user":    "user",
